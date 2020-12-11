@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+    integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+    crossorigin="anonymous"
+  />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+          <img src="images/University Centre Peterborough Logo-All White.png" style="width: 200px; height: 50px;"  alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Grade Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Virtual Tour.html">Virtual Tour</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  
+  
+  <div class="container" id="GradeCalculatorContent">
+      <div class="row overflow-auto">
+    <form id="QualificationWithGrade" class="col-md-4 col-lg-2">
+      <div id="sections" class="row-container" style="max-height: 500px;">
+        <div class="section">
+          <fieldset>
+            <br />              
+            <label for="selectQualification">Select Qualification</label>
+            <select class="form-control Qualification" id="selectQualification">
+              <option value="Alevel">A Level</option>
+              <option value="ASlevel">AS Level</option>
+              <option value="Alevel9credit">A Level (9 Credit award)</option>
+            </select>
+            <br />            
+            <label for="selectGrade">Select Grade</label>
+            <select class="form-control Grade" class="selectGradeClass" id="selectGrade">
+              <option selected="true" disabled="disabled">Choose Grade</option>    
+              <option value="Astar">A*A</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">DD</option>
+              <option value="E">EE</option>
+            </select>
+          </fieldset>
+        </div>
+          <button type="button" id="addQualification" class="btn btn-primary">
+        Add Qualification
+      </button>
+        <p id="pointsTotal"><b> </b></p>  
+        </div>
+    </form>
+</div>  
+</div>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <a href="https://www.facebook.com/ucpeterborough/">
+        <i class="fab fa-facebook-square fa-3x"></i>
+      </a>
+      <a href="https://twitter.com/UCPeterborough">
+        <i class="fab fa-twitter-square fa-3x"></i>
+      </a>
+      <a href="https://twitter.com/UCPeterborough">
+        <i class="fab fa-youtube-square fa-3x"></i>
+      </a>
+      <a href="https://www.google.com/maps?ll=52.587111,-0.230713&z=17&t=m&hl=en&gl=GB&mapclient=embed&q=PE1+4DZ+Peterborough">
+        <i class="fas fa-map-marker-alt fa-3x" style="position: absolute; left: 83%"></i>
+      </a>
+      <span style="right: 17.5%; position: absolute">Park Crescent Campus, Peterborough, Cambridgeshire PE1 4DZ, United Kingdom</span>
+    </div>
+  </footer>
+</body>

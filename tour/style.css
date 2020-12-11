@@ -1,0 +1,67 @@
+body { margin: 0 !important; padding: 0 !important; width: 100% !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important; }
+.container { position: relative; overflow: hidden; height: 65vw; background-image: url("PeterboroughUni.jpg"); background-size: cover; }
+input { display: none; }
+p { margin: 0; }
+.button { color: white; font-weight: bold; font-size: 10px; background-color: #FFFFFF; display: inline; padding: 10px 10px; border-radius: 100%; cursor: pointer; animation: fadein .5s; animation: pulse 1.5s infinite; }
+.content { background: white; padding: 6px 6px 29px 6px; text-align: center; display: none; margin: 24% 40%; border-radius: 8px; box-shadow: 0 4px 2px -2px rgba(211,47,47,0); }
+.cross { font-weight: bold; }
+#b1 { position: absolute; left: 40%; top: 55%; }
+#b2 { position: absolute; left:55%; top: 48%; }
+#b3 { position: absolute; left: 70%; top: 45%; }
+
+
+
+
+#input1:checked ~ #content1,
+#input2:checked ~ #content2,
+#input3:checked ~ #content3 { display: block !important; animation: fadein .5s; }
+input:checked ~ label .button { display: none !important; animation: fadeout .5s; }
+.button:hover { color: #FFFFFF; background: white; }
+.cta { display: inline-block; background: #d32f2f; color: white; padding: 12px 24px; margin-top: 5px; border-radius: 24px; text-decoration: none; transition: all .3s ease; }
+.cta:hover { text-decoration: underline !important; box-shadow: 0 0 0 6px rgba(211, 46, 46, 0.4); }
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse {
+  from { box-shadow: 0 0 0 0px rgba(255, 255, 255); }
+  to { box-shadow: 0 0 0 15px rgba(0, 0, 0, 0); }
+}
+
+h1{font-size: 30px; margin: 10px; padding: 20px}
+/* inspired by this article/tutorial > https://curated.email/hotspots-in-email */
+
+@media only screen and (max-width: 1200px) {
+.content { background: white; padding: 10px; text-align: center; display: none; margin: 25% 30%; border-radius: 12px; box-shadow: 0 4px 2px -2px rgba(211,47,47,0); }
+	.cta { display: inline-block; background: #d32f2f; color: white; padding: 5px 12px; margin-top: 5px; border-radius: 12px; text-decoration: none; transition: all .3s ease; }
+  
+	h1{font-size:30px; display: block; margin:0px; padding:0px}
+	.button { color: white; font-weight: bold; font-size: 5px; background-color: #FFFFFF; display: block; padding: 10px 10px; border-radius: 100%; cursor: pointer; animation: fadein .5s; animation: pulse 1.5s infinite; }
+
+}
+
+@media only screen and (max-width: 800px) {
+.content { background: white; padding: 10px; text-align: center; display: none; margin: 20% 30%; border-radius: 12px; box-shadow: 0 4px 2px -2px rgba(211,47,47,0); }
+	.cta { display: inline-block; background: #d32f2f; color: white; padding: 5px 12px; margin-top: 5px; border-radius: 12px; text-decoration: none; transition: all .3s ease; }
+  
+	h1{font-size:30px; display: block; margin:0px; padding:0px}
+	.button { color: white; font-weight: bold; font-size: 5px; background-color: #FFFFFF; display: block; padding: 8px 8px; border-radius: 100%; cursor: pointer; animation: fadein .5s; animation: pulse 1.5s infinite; }
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+.content { background: white; padding: 20px; text-align: center; display: none; margin: 10% 20%; border-radius: 12px; box-shadow: 0 4px 2px -2px rgba(211,47,47,0); }
+	.cta { display: inline-block; background: #d32f2f; color: white; padding: 5px 12px; margin-top: 5px; border-radius: 12px; text-decoration: none; transition: all .3s ease; }
+  
+	h1{font-size:15px; display: block; margin:0px; padding:4px}
+	.button { color: white; font-weight: bold; font-size: 10px; background-color: #FFFFFF; display: block; padding: 5px 5px; border-radius: 100%; cursor: pointer; animation: fadein .5s; animation: pulse 1.5s infinite; }
+
+}
+

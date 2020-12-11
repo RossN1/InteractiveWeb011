@@ -1,0 +1,77 @@
+#iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+  }
+  
+  #virtualTour {
+    overflow: hidden;
+  }
+
+  #selectGrade {
+    width: 200px;
+  }
+
+  #selectQualification {
+    width: 200px;
+  }
+
+  #addQualification {
+    top: 50%;
+    position: absolute;
+    right: 90%;
+    left: 100%;
+    margin-top: 100%;
+    margin-right: 80%;
+  }
+
+
+  
+  #pointsTotal {
+    top: 260px;
+    position: absolute;
+    left: 250%;
+    margin-bottom: 150%;
+  }
+
+  #QualificationWithGrade {
+    margin-bottom: 47%;
+  }
+
+  .card-columns {
+    bottom: 50%;
+    position: absolute;
+  }
+
+  .navbar-custom
+  { background-color: 	#31B7BC !important; }
+  
+  .nav-link {
+    color: white;
+  }
+
+  .tour {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #005C6E;
+    color: white;
+  }
+
+  i.fas,
+  i.fab {
+    color: white;
+  }
+  
